@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaoutar Ouissa — Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-teal-500 selection:text-slate-950">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider text-teal-400 hover:text-teal-300 transition">&lt;KO/&gt;</a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#a-propos" class="hover:text-teal-400 transition">À propos</a>
+                <a href="#competences" class="hover:text-teal-400 transition">Compétences</a>
+                <a href="#projets" class="hover:text-teal-400 transition">Projets</a>
+                <a href="#parcours" class="hover:text-teal-400 transition">Parcours</a>
+                <a href="#contact" class="hover:text-teal-400 transition">Contact</a>
+            </div>
+            <a href="#contact" class="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-teal-400 border border-teal-500/30 rounded-lg hover:bg-teal-500/10 transition">
+                Me contacter
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-teal-900/20 via-slate-950 to-slate-950 -z-10"></div>
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+            <p class="text-teal-400 font-mono text-sm tracking-widest uppercase">Bonjour le monde, je suis</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight">
+                Kaoutar Ouissa
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-400 font-light max-w-3xl mx-auto leading-relaxed">
+                Passionnée par la création d'applications web modernes, l'écriture d'un code propre, l'apprentissage continu et la précision du détail au pixel près.
+            </p>
+            <div class="pt-6 flex flex-wrap justify-center gap-4">
+                <a href="#projets" class="px-6 py-3 bg-teal-500 text-slate-950 font-bold rounded-xl hover:bg-teal-400 transition shadow-lg shadow-teal-500/20">
+                    Découvrir mes projets
+                </a>
+                <a href="#contact" class="px-6 py-3 border border-slate-700 bg-slate-900/50 hover:bg-slate-800 text-slate-200 font-semibold rounded-xl transition">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 space-y-32 py-20">
+
+        <!-- 01 — Profil / À propos -->
+        <section id="a-propos" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <span class="text-teal-400 font-mono text-sm">01 —</span>
+                <h2 class="text-3xl font-bold text-white">Profil</h2>
+                <div class="h-[1px] bg-slate-800 flex-1"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2 space-y-6 text-slate-300 leading-relaxed">
+                    <h3 class="text-xl font-semibold text-white">Qui je suis</h3>
+                    <p>
+                        Je suis une jeune développeuse web basée à Beni Mellal, Maroc, actuellement le cursus Développeur Full Stack PHP au sein de Simplon Maghreb & ENAA. J'aime concevoir des solutions numériques complètes — de l'intégration d'interfaces utilisateur dynamiques au déploiement d'architectures back-end robustes.
+                    </p>
+                    <p>
+                        Mon parcours initial en réseaux informatiques m'apporte une excellente compréhension des infrastructures, des protocoles et de la sécurité sous-jacente. Je suis guidée par la curiosité technique, les bonnes pratiques de conception (clean code, MVC) et la satisfaction de livrer des produits fiables et performants.
+                    </p>
+
+                    <!-- Langues -->
+                    <div class="pt-4 grid grid-cols-3 gap-4">
+                        <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800">
+                            <span class="block text-xs text-slate-400 uppercase font-mono">Arabe</span>
+                            <span class="text-sm font-semibold text-teal-300">Langue maternelle</span>
+                        </div>
+                        <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800">
+                            <span class="block text-xs text-slate-400 uppercase font-mono">Français</span>
+                            <span class="text-sm font-semibold text-teal-300">Courant / C1</span>
+                        </div>
+                        <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800">
+                            <span class="block text-xs text-slate-400 uppercase font-mono">Anglais</span>
+                            <span class="text-sm font-semibold text-teal-300">Intermédiaire avancé / B2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Points Forts -->
+                <div class="space-y-4">
+                    <div class="bg-slate-900/40 p-5 rounded-2xl border border-slate-800 space-y-2">
+                        <div class="text-teal-400 text-xl"><i class="fa-solid fa-bolt"></i></div>
+                        <h4 class="font-bold text-white text-base">Apprentissage Rapide</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Des infrastructures réseaux aux architectures full-stack, j'assimile rapidement les nouvelles technologies pour les appliquer concrètement.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-900/40 p-5 rounded-2xl border border-slate-800 space-y-2">
+                        <div class="text-teal-400 text-xl"><i class="fa-solid fa-bullseye"></i></div>
+                        <h4 class="font-bold text-white text-base">Sens du Détail</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Une interface utilisateur fidèle au pixel près et un code source lisible, documenté et structuré sont pour moi indispensables.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-900/40 p-5 rounded-2xl border border-slate-800 space-y-2">
+                        <div class="text-teal-400 text-xl"><i class="fa-solid fa-handshake"></i></div>
+                        <h4 class="font-bold text-white text-base">Esprit d'Équipe</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Parfaitement à l'aise avec les flux de travail Git (Gitflow) et les méthodologies Agiles via des outils comme Jira et Trello.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02 — Compétences -->
+        <section id="competences" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <span class="text-teal-400 font-mono text-sm">02 —</span>
+                <h2 class="text-3xl font-bold text-white">Expertise</h2>
+                <div class="h-[1px] bg-slate-800 flex-1"></div>
+            </div>
+
+            <div class="space-y-8">
+                <h3 class="text-xl font-semibold text-white">Compétences techniques</h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Front-End -->
+                    <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 space-y-4">
+                        <h4 class="text-sm font-bold uppercase tracking-wider text-teal-400 mb-2">Front-End</h4>
+                        
+                        <div class="space-y-3">
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span>HTML5</span>
+                                    <span class="text-slate-400">90%</span>
+                                </div>
+                                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-teal-400 h-full rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span>CSS3 / Sass</span>
+                                    <span class="text-slate-400">85%</span>
+                                </div>
+                                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-teal-400 h-full rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span>JavaScript (ES6+)</span>
+                                    <span class="text-slate-400">80%</span>
+                                </div>
+                                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-teal-400 h-full rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span>Tailwind CSS</span>
+                                    <span class="text-slate-400">75%</span>
+                                </div>
+                                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-teal-400 h-full rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span>React.js</span>
+                                    <span class="text-slate-400">70%</span>
+                                </div>
+                                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-teal-400 h-full rounded-full" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Back-End & BDD -->
+                    <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 space-y-4">
+                        <h4 class="text-sm font-bold uppercase tracking-wider text-teal-400 mb-2">Back-End & BDD</h4>
+                        
+                        <div class="space-y-3">
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span>PHP (POO, MVC)</span>
+                                    <span class="text-slate-400">82%</span>
+                                </div>
+                                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-teal-400 h-full rounded-full" style="width: 82%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span>SQL / MySQL</span>
+                                    <span class="text-slate-400">78%</span>
+                                </div>
+                                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-teal-400 h-full rounded-full" style="width: 78%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-xs font-semibold mb-1">
+                                    <span>Laravel / Eloquent</span>
+                                    <span class="text-slate-400">75%</span>
+                                </div>
+                                <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                    <div class="bg-teal-400 h-full rounded-full" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outils & Environnement -->
+                <div class="bg-slate-900/50 p-6 rounded-2xl border border-slate-800 space-y-4">
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-teal-400 mb-2">Outils & Environnement</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-slate-800 text-slate-200 rounded-xl text-sm font-mono border border-slate-700/50">Git</span>
+                        <span class="px-4 py-2 bg-slate-800 text-slate-200 rounded-xl text-sm font-mono border border-slate-700/50">GitHub</span>
+                        <span class="px-4 py-2 bg-slate-800 text-slate-200 rounded-xl text-sm font-mono border border-slate-700/50">VS Code</span>
+                        <span class="px-4 py-2 bg-slate-800 text-slate-200 rounded-xl text-sm font-mono border border-slate-700/50">Figma</span>
+                        <span class="px-4 py-2 bg-slate-800 text-slate-200 rounded-xl text-sm font-mono border border-slate-700/50">Trello</span>
+                        <span class="px-4 py-2 bg-slate-800 text-slate-200 rounded-xl text-sm font-mono border border-slate-700/50">Jira</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 — Portfolio / Projets -->
+        <section id="projets" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <span class="text-teal-400 font-mono text-sm">03 —</span>
+                <h2 class="text-3xl font-bold text-white">Portfolio</h2>
+                <div class="h-[1px] bg-slate-800 flex-1"></div>
+            </div>
+
+            <div class="space-y-8">
+                <h3 class="text-xl font-semibold text-white">Projets à la une</h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- Projet 1: BDE-EVENT -->
+                    <div class="bg-slate-900/60 rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-teal-500/40 transition duration-300 space-y-4">
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-3xl"></span>
+                                <a href="https://github.com/kaoutarouissa/BDE-Events" target="_blank" class="text-slate-400 hover:text-teal-400 text-xl transition">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <h4 class="text-xl font-bold text-white">BDE-EVENT</h4>
+                            
+                            <!-- Besoin traité -->
+                            <div class="p-3 bg-slate-950/60 rounded-xl border border-slate-800/80">
+                                <p class="text-[11px] font-semibold uppercase tracking-wider text-teal-400 mb-1">Besoin traité :</p>
+                                <p class="text-xs text-slate-300 leading-relaxed">
+                                    Faciliter l'organisation des activités étudiantes en centralisant la création d'événements et la réservation des places en ligne pour éviter la gestion manuelle.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pt-4 flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 bg-slate-800 text-teal-300 text-xs rounded-md font-mono">Laravel 12</span>
+                            <span class="px-2.5 py-1 bg-slate-800 text-teal-300 text-xs rounded-md font-mono">PHP</span>
+                            <span class="px-2.5 py-1 bg-slate-800 text-teal-300 text-xs rounded-md font-mono">MySQL</span>
+                            <span class="px-2.5 py-1 bg-slate-800 text-teal-300 text-xs rounded-md font-mono">HTML5 / CSS3</span>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2: Linkup -->
+                    <div class="bg-slate-900/60 rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-teal-500/40 transition duration-300 space-y-4">
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-3xl"></span>
+                                <a href="https://github.com/kaoutarouissa/Linkup" target="_blank" class="text-slate-400 hover:text-teal-400 text-xl transition">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <h4 class="text-xl font-bold text-white">Linkup</h4>
+                            
+                            <!-- Besoin traité -->
+                            <div class="p-3 bg-slate-950/60 rounded-xl border border-slate-800/80">
+                                <p class="text-[11px] font-semibold uppercase tracking-wider text-teal-400 mb-1">Besoin traité :</p>
+                                <p class="text-xs text-slate-300 leading-relaxed">
+                                    Offrir un espace d'échange fluide permettant aux utilisateurs de publier, partager et interagir avec des contenus dynamiques en temps réel.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pt-4 flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 bg-slate-800 text-teal-300 text-xs rounded-md font-mono">Laravel</span>
+                            <span class="px-2.5 py-1 bg-slate-800 text-teal-300 text-xs rounded-md font-mono">PHP (MVC)</span>
+                            <span class="px-2.5 py-1 bg-slate-800 text-teal-300 text-xs rounded-md font-mono">Git / GitHub</span>
+                        </div>
+                    </div>
+
+                    <!-- Projet 3: PharmaFEFO -->
+                    <div class="bg-slate-900/60 rounded-2xl border border-slate-800 p-6 flex flex-col justify-between hover:border-teal-500/40 transition duration-300 space-y-4">
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-3xl"></span>
+                                <a href="https://github.com/kaoutarouissa/pharmafefo" target="_blank" class="text-slate-400 hover:text-teal-400 text-xl transition">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <h4 class="text-xl font-bold text-white">PharmaFEFO</h4>
+                            
+                            <!-- Besoin traité -->
+                            <div class="p-3 bg-slate-950/60 rounded-xl border border-slate-800/80">
+                                <p class="text-[11px] font-semibold uppercase tracking-wider text-teal-400 mb-1">Besoin traité :</p>
+                                <p class="text-xs text-slate-300 leading-relaxed">
+                                    Éviter le gaspillage de médicaments en appliquant la règle FEFO (First Expiry, First Out) et en assurant un suivi sécurisé des stocks périmés.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pt-4 flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 bg-slate-800 text-teal-300 text-xs rounded-md font-mono">PHP (MVC)</span>
+                            <span class="px-2.5 py-1 bg-slate-800 text-teal-300 text-xs rounded-md font-mono">SQL</span>
+                            <span class="px-2.5 py-1 bg-slate-800 text-teal-300 text-xs rounded-md font-mono">Gestion FEFO</span>
+                            <span class="px-2.5 py-1 bg-slate-800 text-teal-300 text-xs rounded-md font-mono">RBAC Auth</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 04 — Éducation / Parcours -->
+        <section id="parcours" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <span class="text-teal-400 font-mono text-sm">04 —</span>
+                <h2 class="text-3xl font-bold text-white">Éducation</h2>
+                <div class="h-[1px] bg-slate-800 flex-1"></div>
+            </div>
+
+            <div class="space-y-8">
+                <h3 class="text-xl font-semibold text-white">Parcours académique</h3>
+
+                <div class="relative border-l border-slate-800 ml-4 space-y-10 pl-8">
+                    <!-- Item 1 -->
+                    <div class="relative">
+                        <div class="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-teal-400 border-4 border-slate-950"></div>
+                        <span class="text-xs font-mono text-teal-400">2026 — Présent</span>
+                        <h4 class="text-lg font-bold text-white mt-1">Développeuse Full Stack PHP</h4>
+                        <p class="text-xs font-medium text-slate-400 mb-3">Simplon Maghreb & ENAA · Beni Mellal</p>
+                        <p class="text-sm text-slate-300 leading-relaxed">
+                            Formation intensive axée sur PHP (POO, MVC), Laravel, React, SQL, la gestion des flux Git et le développement d'interfaces modernes au travers de projets concrets et collaboratifs.
+                        </p>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="relative">
+                        <div class="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950"></div>
+                        <span class="text-xs font-mono text-slate-400">2020 — 2022</span>
+                        <h4 class="text-lg font-bold text-white mt-1">Technicienne Spécialisée en Réseaux Informatiques</h4>
+                        <p class="text-xs font-medium text-slate-400 mb-3">ISTA Kasba Tadla</p>
+                        <p class="text-sm text-slate-300 leading-relaxed">
+                            Cursus de deux ans spécialisé dans la conception d'infrastructures réseaux, la configuration d'équipements, l'étude des protocoles et l'administration système.
+                        </p>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="relative">
+                        <div class="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950"></div>
+                        <span class="text-xs font-mono text-slate-400">2018 — 2019</span>
+                        <h4 class="text-lg font-bold text-white mt-1">Baccalauréat — Sciences Physiques</h4>
+                        <p class="text-xs font-medium text-slate-400 mb-3">Maroc</p>
+                        <p class="text-sm text-slate-300 leading-relaxed">
+                            Option Sciences Physiques et Mathématiques, développant de solides compétences analytiques et une démarche rigoureuse de résolution de problèmes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05 — Contact -->
+        <section id="contact" class="space-y-12">
+            <div class="flex items-center gap-4">
+                <span class="text-teal-400 font-mono text-sm">05 —</span>
+                <h2 class="text-3xl font-bold text-white">Contact</h2>
+                <div class="h-[1px] bg-slate-800 flex-1"></div>
+            </div>
+
+            <div class="bg-slate-900/40 rounded-3xl border border-slate-800 p-8 md:p-12 space-y-8 text-center max-w-3xl mx-auto">
+                <div class="space-y-3">
+                    <h3 class="text-2xl md:text-3xl font-bold text-white">Collaborons ensemble</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed max-w-xl mx-auto">
+                        Je suis activement à la recherche d'opportunités pour mettre mes compétences au service de projets concrets. Que ce soit pour un poste, un stage ou une collaboration en freelance, n'hésitez pas à me contacter.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6 pt-4 text-sm font-medium">
+                    <a href="mailto:ouissakawtar975@gmail.com" class="flex items-center gap-2 bg-slate-800/80 hover:bg-slate-800 text-teal-300 px-4 py-3 rounded-xl border border-slate-700/50 transition">
+                        <i class="fa-solid fa-envelope"></i> ouissakawtar975@gmail.com
+                    </a>
+                    <a href="https://github.com/kaoutarouissa" target="_blank" class="flex items-center gap-2 bg-slate-800/80 hover:bg-slate-800 text-slate-200 px-4 py-3 rounded-xl border border-slate-700/50 transition">
+                        <i class="fa-brands fa-github"></i> github.com/kaoutarouissa
+                    </a>
+                    <a href="https://linkedin.com/in/kaoutarouissa" target="_blank" class="flex items-center gap-2 bg-slate-800/80 hover:bg-slate-800 text-slate-200 px-4 py-3 rounded-xl border border-slate-700/50 transition">
+                        <i class="fa-brands fa-linkedin"></i> linkedin.com/in/kaoutarouissa
+                    </a>
+                </div>
+
+                <div class="pt-4">
+                    <a href="mailto:ouissakawtar975@gmail.com" class="inline-flex items-center gap-2 px-8 py-4 bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold rounded-xl shadow-lg shadow-teal-500/20 transition">
+                        Envoyer un message <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-xs text-slate-500 border-t border-slate-900 font-mono">
+        &copy; 2026 Kaoutar Ouissa · Conçu avec passion &amp; code propre
+    </footer>
+
+</body>
+</html>
